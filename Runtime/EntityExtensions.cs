@@ -1,7 +1,7 @@
 ﻿using Rehawk.Foundation.Extensions;
 using UnityEngine;
 
-namespace Rehawk.Foundation.Entities
+namespace Rehawk.Entities
 {
     public static class EntityExtensions
     {

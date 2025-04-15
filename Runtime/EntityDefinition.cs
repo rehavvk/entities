@@ -5,7 +5,7 @@ using UnityEngine;
 using Sirenix.OdinInspector;
 #endif
 
-namespace Rehawk.Foundation.Entities
+namespace Rehawk.Entities
 {
     [Serializable]
     [InlineProperty]

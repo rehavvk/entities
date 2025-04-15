@@ -1,4 +1,4 @@
-﻿namespace Rehawk.Foundation.Entities
+﻿namespace Rehawk.Entities
 {
     public abstract class EntityCompositStateBase {}
 }

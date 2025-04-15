@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Rehawk.Foundation.Entities
+namespace Rehawk.Entities
 {
     public static class EntityRegister
     {

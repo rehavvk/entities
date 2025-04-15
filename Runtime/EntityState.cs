@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Newtonsoft.Json;
 using UnityEngine;
 
-namespace Rehawk.Foundation.Entities
+namespace Rehawk.Entities
 { 
     [Serializable]
     public sealed class EntityState

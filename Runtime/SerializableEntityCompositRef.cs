@@ -3,7 +3,7 @@ using Newtonsoft.Json;
 using Rehawk.Foundation.Misc;
 using UnityEngine;
 
-namespace Rehawk.Foundation.Entities
+namespace Rehawk.Entities
 {
     public delegate void SerializedEntityCompositRefChangeHandler<in T>(T previousValue, T value) where T : IEntityComposit;
     

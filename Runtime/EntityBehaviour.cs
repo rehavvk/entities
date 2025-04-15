@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-namespace Rehawk.Foundation.Entities
+namespace Rehawk.Entities
 {
     public abstract class EntityBehaviour : MonoBehaviour
     {

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Rehawk.Foundation.Entities
+namespace Rehawk.Entities
 {
     public static class EntityQuery
     {

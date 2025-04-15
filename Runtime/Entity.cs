@@ -1,6 +1,7 @@
 ﻿using System;
 using Rehawk.Foundation.Spawning;
 using Rehawk.Foundation.Misc;
+using Rehawk.Foundation.GUID;
 using UnityEngine;
 using Semaphore = Rehawk.Foundation.Misc.Semaphore;
 
@@ -8,10 +9,10 @@ using Semaphore = Rehawk.Foundation.Misc.Semaphore;
 using Sirenix.OdinInspector;
 #endif
 
-namespace Rehawk.Foundation.Entities
+namespace Rehawk.Entities
 {
     [DisallowMultipleComponent]
-    [RequireComponent(typeof(GUID.GUID))]
+    [RequireComponent(typeof(GUID))]
     [SelectionBase]
     public sealed class Entity : EntityBehaviour
     {
@@ -27,7 +28,7 @@ namespace Rehawk.Foundation.Entities
 
         private EntityDefinitionDirectory entityDefinitionDirectory;
         
-        private GUID.GUID guid;
+        private GUID guid;
 
         private EntityDefinition definition;
         private EntityState state;
@@ -41,7 +42,7 @@ namespace Rehawk.Foundation.Entities
             {
                 if (guid == null)
                 {
-                    guid = GetComponent<GUID.GUID>();
+                    guid = GetComponent<GUID>();
                 }
                 
                 if (guid.IsGuidAssigned())

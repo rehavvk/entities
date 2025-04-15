@@ -7,7 +7,7 @@ using UnityEngine;
 using Sirenix.OdinInspector;
 #endif
 
-namespace Rehawk.Foundation.Entities
+namespace Rehawk.Entities
 {
     public class EntityDefinitionDirectory : ScriptableObject
     {

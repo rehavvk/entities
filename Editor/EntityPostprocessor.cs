@@ -2,7 +2,7 @@
 using Rehawk.Foundation.Assets;
 using UnityEditor;
 
-namespace Rehawk.Foundation.Entities.Editor
+namespace Rehawk.Entities.Editor
 {
     public class EntityPostprocessor : AssetPostprocessor
     {
