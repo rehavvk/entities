@@ -1,0 +1,19 @@
+{
+    "name": "Rehawk.Entities.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:29b8b186939c8a3458cc2e86dfaaaa3f",
+        "GUID:0e115b09e1274a5eae79ea028ab2728c"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

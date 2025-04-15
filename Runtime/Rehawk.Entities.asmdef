@@ -1,0 +1,16 @@
+{
+    "name": "Rehawk.Entities",
+    "rootNamespace": "",
+    "references": [
+        "GUID:c3118203ee4d361449d0da713cf49692"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
