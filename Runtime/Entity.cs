@@ -14,7 +14,7 @@ namespace Rehawk.Entities
     [DisallowMultipleComponent]
     [RequireComponent(typeof(GUID))]
     [SelectionBase]
-    public sealed class Entity : EntityBehaviour
+    public class Entity : EntityBehaviour
     {
 #if ODIN_INSPECTOR_3
         [BoxGroup("General", false), ReadOnly]
@@ -121,7 +121,7 @@ namespace Rehawk.Entities
             LastActiveTimestamp = Time.realtimeSinceStartup;
         }
 
-        private void OnValidate()
+        protected virtual void OnValidate()
         {
             if (!Application.isPlaying)
             {
