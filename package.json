@@ -7,5 +7,8 @@
 		"name":"Frederick Böhke",
 		"email":"frederick@boehke.com",
 		"url":"https://www.boehke.com"
+	},
+	"dependencies":{
+		"com.unity.nuget.newtonsoft-json": "3.0.2"
 	}
 }

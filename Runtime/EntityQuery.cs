@@ -12,6 +12,18 @@ namespace Rehawk.Entities
                                  .Where(e => e.IsActivated || includeInactive);
         }
         
+        public static IEnumerable<T> All<T>(bool includeInactive = false)
+            where T : Entity
+        {
+            return All(includeInactive).OfType<T>();
+        }
+        
+        public static T FirstOrDefault<T>(bool includeInactive = false)
+            where T : Entity
+        {
+            return All<T>(includeInactive).FirstOrDefault();
+        }
+        
         public static Entity WithUid(this IEnumerable<Entity> query, string uid)
         {
             return query.FirstOrDefault(e => e.Uid == uid);
