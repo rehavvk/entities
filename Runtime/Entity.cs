@@ -79,11 +79,6 @@ namespace Rehawk.Entities
             set { transform.rotation = value; }
         }
         
-        public Transform Transform
-        {
-            get { return transform; }
-        }
-        
         public float BornTimestamp { get; private set; } = -1;
         public float LastActiveTimestamp { get; private set; } = -1;
         
@@ -253,11 +248,11 @@ namespace Rehawk.Entities
         {
             if (Definition.IsValid())
             {
-                state.Prefab = Definition.Prefab;
+                state.Prefab = Definition.Prefab != null ? Definition.Prefab.gameObject : null;
             }
             else if (TryGetComponent(out PrefabInstance prefabInstance))
             {
-                state.Prefab = prefabInstance.Prefab;
+                state.Prefab = prefabInstance.Prefab != null ? prefabInstance.Prefab.gameObject : null;
             }
             else
             {

@@ -1,4 +1,6 @@
-﻿using Rehawk.Foundation.Extensions;
+﻿using System.Collections.Generic;
+using System.Linq;
+using Rehawk.Foundation.Extensions;
 using UnityEngine;
 
 namespace Rehawk.Entities
@@ -78,6 +80,11 @@ namespace Rehawk.Entities
             where TComponent : Component
         {
             return composit != null ? composit.Entity.GetOrAddComponent<TComponent>() : default;
+        }
+        
+        public static IEnumerable<EntityDefinition> OfType<T>(this IEnumerable<EntityDefinition> definitions)
+        {
+            return definitions.Where(definition => definition.Prefab is T);
         }
     }
 }

@@ -21,9 +21,9 @@ namespace Rehawk.Entities
             get { return entity.Uid; }
         }
 
-        public GameObject Prefab
+        public Entity Prefab
         {
-            get { return entity.gameObject; }
+            get { return entity; }
         }
         
         public bool IsValid()
