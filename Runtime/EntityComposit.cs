@@ -93,6 +93,7 @@ namespace Rehawk.Entities
     
     [RequireComponent(typeof(Entity))]
     public abstract class EntityCompositBase<T> : EntityCompositBase
+        where T : Entity
     {
         private T concreteEntity;
 
