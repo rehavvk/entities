@@ -120,6 +120,8 @@ namespace Rehawk.Entities
                 OnInitialize();
             }
 
+            yield return new WaitForEndOfFrame();
+
             IsActivated = true;
             OnActivate();
         }

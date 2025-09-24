@@ -40,7 +40,7 @@ namespace Rehawk.Entities
         {
             get
             {
-                if (guid == null)
+                if (!guid)
                 {
                     guid = GetComponent<GUID>();
                 }
