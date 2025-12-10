@@ -8,7 +8,9 @@ using Sirenix.OdinInspector;
 namespace Rehawk.Entities
 {
     [Serializable]
+#if ODIN_INSPECTOR_3
     [InlineProperty]
+#endif
     public struct EntityDefinition : IEquatable<EntityDefinition>
     {
 #if ODIN_INSPECTOR_3
