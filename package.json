@@ -1,14 +1,14 @@
 {
-	"name":"com.rehawk.entities",
-	"version":"0.1.0",
-	"displayName":"Entities",
-	"unity":"2020.1",
-	"author":{
-		"name":"Frederick Böhke",
-		"email":"frederick@boehke.com",
-		"url":"https://www.boehke.com"
+	"name": "com.rehawk.entities",
+	"version": "0.1.0",
+	"displayName": "Entities",
+	"unity": "2021.3",
+	"author": {
+		"name": "Frederick Böhke",
+		"email": "frederick@boehke.com",
+		"url": "https://www.boehke.com"
 	},
-	"dependencies":{
+	"dependencies": {
 		"com.unity.nuget.newtonsoft-json": "3.0.2"
 	}
 }
